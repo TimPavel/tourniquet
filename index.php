@@ -10,11 +10,10 @@ $simplexTourniquet = new TourniquetSimplex();
 
 $petya = new Passenger();
 
-$petya->addMoneyToWallet(-5);
+$petya->addMoneyToWallet(59);
 $petya->showMoneyInWallet();
 
+$petya->passTourniquet('in', $simplexTourniquet);
+$petya->passTourniquet('out', $duplexTourniqeut);
 
-$petya->passTourniquet('in', $simplexTourniquet);
-$petya->passTourniquet('out', $simplexTourniquet);
-$petya->passTourniquet('in', $simplexTourniquet);
 
